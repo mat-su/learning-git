@@ -1,0 +1,80 @@
+What is Git?
+Git is a free and open source version control system
+
+What is Version Control?
+The management of changes to documents, computer programs, large websites, and other collections of information.
+
+Directory - folder
+Terminal or Command Line - Interface for Text Commands
+CLI - Command Line Interface
+cd - change directory
+Code Editor - Word Processor for Writing Code
+Repository - Project, or the folder/place where your project is kept
+github - a website to host your repositories online
+Clone - bring a repository that is hosted somewhere like Github into a folder on your local machine
+
+add - track your files and changes in git
+commit - save your files in Git
+push - upload git commands to a remote repo like github
+pull - download changes from remote repo to your local machine, the opposite of push
+
+git init - initialize git 
+
+commands in cmd
+esc
+cls
+doskey/history
+f7
+
+
+commands in git bash
+git --version
+git config --global user.name/user.email ""
+clear
+ls
+ls -a [check all files]
+-rm -rf <file> [delete file]
+rm command in UNIX stands for remove and by default is used for removing files. It is simple but a powerful command especially when used with options such as -rf which allow it to delete non-empty directories forcefully.
+
+git rm --cached main.css [remove main.css from staging area]
+git rm -r --cached . [remove all from staging area]
+
+
+git add -A [add everything to staging area even it is inside the directory] 
+
+
+----git commit----
+git log
+git log --oneline
+git show hash
+git diff [differences between current dir and what has been committed]
+git restore index.js [discard changes]
+
+-----amend commit message-----
+git commit --amend -m ""
+
+--- git push existing repo in cmd --- 
+git remote add origin https/ssh
+git branch -M main
+git push -u origin main
+
+---git branch----
+git branch -r [list of branches in the remote server]
+git branch -a [list of all branches]
+git branch <name-of-branch> [create a branch]
+git checkout <name-of-branch> [switching to another branch]
+git checkout - [switch to previous branch]
+git push --set-upstream origin feature-a / git push-u origin feature-a [push a different branch to remote server]
+git checkout -b todelete [create and switch to the branch]
+git branch -d <name-of-branch> [delete a selected branch *note that go to main branch or other branch]
+
+
+---git merge---
+git merge <name-of-branch>
+
+
+
+
+vi terminal
+i insert
+wq to quit
