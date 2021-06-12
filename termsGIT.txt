@@ -20,14 +20,14 @@ pull - download changes from remote repo to your local machine, the opposite of 
 
 git init - initialize git 
 
-commands in cmd
+commands in cmd to clear screen:
 esc
 cls
 doskey/history
 f7
 
 
-commands in git bash
+commands in git bash :
 git --version
 git config --global user.name/user.email ""
 clear
@@ -46,7 +46,7 @@ git add -A [add everything to staging area even it is inside the directory]
 ----git commit----
 git log
 git log --oneline
-git show hash
+git show <hash>
 git diff [differences between current dir and what has been committed]
 git restore index.js [discard changes]
 
@@ -72,9 +72,9 @@ git branch -d <name-of-branch> [delete a selected branch *note that go to main b
 ---git merge---
 git merge <name-of-branch>
 
+---change git remote url------
+$ git remote set-url origin https://git-repo/new-repository.git
 
-
-
-vi terminal
+vi terminal commands: 
 i insert
 wq to quit

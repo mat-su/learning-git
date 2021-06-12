@@ -1,0 +1,33 @@
+ssh-keygen -t rsa -b 4096 -C "username/email"
+-
+-
+passphrase
+-
+-
+[let our computer know that we use that key] eval $(ssh-agent -s)
+[add ssh key] ssh-add -/.ssh/id_rsa
+
+passphrase
+
+clip < -/.ssh/id_rsa.pub
+
+
+
+============================================
+cat ~/.ssh/id_rsa.pub or cat ~/.ssh/id_dsa.pub
+
+You can list all the public keys you have by doing:
+
+$ ls ~/.ssh/*.pub
+
+=====================================================
+If you don't want to type your password each time you use the key, you'll need to add it to the ssh-agent.
+
+To start the agent, run the following:
+
+$ eval $(ssh-agent) 
+Agent pid 9700      
+
+Enter ssh-add followed by the path to the private key file:
+
+$ ssh-add ~/.ssh/<private_key_file>      
