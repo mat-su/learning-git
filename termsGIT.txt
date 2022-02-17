@@ -18,8 +18,10 @@ commit - save your files in Git
 push - upload git commands to a remote repo like github
 pull - download changes from remote repo to your local machine, the opposite of push
 
+//configure the git
+git config
+
 git init - initialize git 
-git config - configure git in your local machine
 
 commands in cmd to clear screen:
 esc
@@ -31,7 +33,7 @@ f7
 commands in git bash :
 git --version
 git config --global user.name/user.email ""
-clear / CRTL+L
+clear / CTRL+L
 ls
 ls -a [check all files]
 -rm -rf <file> [delete file]
